@@ -17,4 +17,6 @@ Rails.application.routes.draw do
     end
       resource :relationships, only: [:create, :destroy]
   end
+
+  get "search" => "searches#search"
 end
